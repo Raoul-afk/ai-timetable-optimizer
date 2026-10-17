@@ -1,0 +1,20 @@
+{
+  "rooms": ["R101", "R102", "R103"],
+  "timeslots": [
+    "MON_08", "MON_10", "MON_13", "MON_15",
+    "TUE_08", "TUE_10", "TUE_13", "TUE_15",
+    "WED_08", "WED_10", "WED_13", "WED_15",
+    "THU_08", "THU_10", "THU_13", "THU_15",
+    "FRI_08", "FRI_10", "FRI_13", "FRI_15"
+  ],
+  "courses": [
+    {"id": "MATH1", "semester": 1, "sessions": 2},
+    {"id": "PROG1", "semester": 1, "sessions": 2},
+    {"id": "PHYS1", "semester": 1, "sessions": 1},
+    {"id": "ALGO2", "semester": 2, "sessions": 2},
+    {"id": "DB2",   "semester": 2, "sessions": 2},
+    {"id": "WEB2",  "semester": 2, "sessions": 1},
+    {"id": "AI3",   "semester": 3, "sessions": 2},
+    {"id": "NET3",  "semester": 3, "sessions": 2}
+  ]
+}

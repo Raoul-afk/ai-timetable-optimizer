@@ -1,0 +1,28 @@
+{
+    "rooms": ["R101", "R102", "R103"],
+    "timeslots": [
+      "MON_08", "MON_10", "MON_13", "MON_15",
+      "TUE_08", "TUE_10", "TUE_13", "TUE_15",
+      "WED_08", "WED_10", "WED_13", "WED_15",
+      "THU_08", "THU_10", "THU_13", "THU_15",
+      "FRI_08", "FRI_10", "FRI_13", "FRI_15"
+    ],
+    "courses": [
+      {"id": "MATH_S1", "semester": 1, "sessions": 4},
+      {"id": "PROG_S1", "semester": 1, "sessions": 4},
+      {"id": "PHYS_S1", "semester": 1, "sessions": 2},
+      {"id": "ALGO_S2", "semester": 2, "sessions": 4},
+      {"id": "ARCH_S2", "semester": 2, "sessions": 3},
+      {"id": "WEB_S2",  "semester": 2, "sessions": 3},
+      {"id": "BDD_S3",  "semester": 3, "sessions": 4},
+      {"id": "SYS_S3",  "semester": 3, "sessions": 4},
+      {"id": "NET_S3",  "semester": 3, "sessions": 2},
+      {"id": "IA_S4",   "semester": 4, "sessions": 4},
+      {"id": "ROB_S4",  "semester": 4, "sessions": 3},
+      {"id": "STAT_S5", "semester": 5, "sessions": 3},
+      {"id": "OPT_S5",  "semester": 5, "sessions": 3},
+      {"id": "SEC_S6",  "semester": 6, "sessions": 3},
+      {"id": "DEV_S6",  "semester": 6, "sessions": 3},
+      {"id": "PROJ_S7", "semester": 7, "sessions": 3}
+    ]
+}
