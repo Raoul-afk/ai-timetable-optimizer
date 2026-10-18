@@ -67,3 +67,19 @@ The solver applies:
 Because rooms are interchangeable in the current datasets, the solver only needs to try one free room for each timeslot. This optimization must be revisited if room capacities, equipment, or preferences are added.
 
 `FEASIBLE` means all sessions were assigned; `NO_SOLUTION` means the search was exhausted; `SEARCH_LIMIT` means the time or node budget was reached and does not prove that no solution exists. The DFS search statistics (`nodes_explored`, `backtracks`, and `domain_checks`) count different operations from Hill Climbing's `total_evaluations`, so compare runtime and validity rather than comparing those counts directly.
+
+## Genetic Algorithm
+
+The search uses a pure genetic algorithm with uniform crossover, targeted mutation, and elitism:
+
+- With a tournament of size `k`, it selects the best individual among random candidates to become parents.
+- With a uniform crossover, each gene of the child is randomly inherited from one of the two parents.
+- With a small mutation probability, a gene is modified by changing either its room or its timeslot.
+- The top 5 individuals are preserved unchanged at each generation to keep the best solutions.
+
+The search parameters (`pop_size`, `generations`, `gene_mutation_prob`, `k`) are set in the call to `run_pure_ga()` in [`algo/genetic.py`](algo/genetic.py). A fitness of `0` (i.e., 0 conflicts) means all hard constraints are satisfied; the search does not guarantee that it will find one within the given generations.
+
+Run from the repository root with Python 3:
+
+```bash
+python algo/genetic.py
