@@ -1,0 +1,224 @@
+{
+  "groups_per_semester": 4,
+  "rooms": [
+    "R101",
+    "R102",
+    "R103",
+    "R104",
+    "R105",
+    "R106",
+    "R107",
+    "R108",
+    "R109",
+    "R110",
+    "R111",
+    "R112",
+    "R113",
+    "R114",
+    "R115",
+    "R116",
+    "R117",
+    "R118",
+    "R119",
+    "R120"
+  ],
+  "timeslots": [
+    "MON_08",
+    "MON_10",
+    "MON_13",
+    "MON_15",
+    "TUE_08",
+    "TUE_10",
+    "TUE_13",
+    "TUE_15",
+    "WED_08",
+    "WED_10",
+    "WED_13",
+    "WED_15",
+    "THU_08",
+    "THU_10",
+    "THU_13",
+    "THU_15",
+    "FRI_08",
+    "FRI_10",
+    "FRI_13",
+    "FRI_15"
+  ],
+  "courses": [
+    {
+      "id": "C1_S1",
+      "name": "Calculus I",
+      "semester": 1,
+      "teacher": "T01",
+      "sessions": 2
+    },
+    {
+      "id": "C2_S1",
+      "name": "Programming Fundamentals",
+      "semester": 1,
+      "teacher": "T02",
+      "sessions": 2
+    },
+    {
+      "id": "C3_S1",
+      "name": "Discrete Mathematics",
+      "semester": 1,
+      "teacher": "T03",
+      "sessions": 2
+    },
+    {
+      "id": "C4_S1",
+      "name": "Computer Architecture",
+      "semester": 1,
+      "teacher": "T04",
+      "sessions": 2
+    },
+    {
+      "id": "C5_S1",
+      "name": "Technical Communication",
+      "semester": 1,
+      "teacher": "T05",
+      "sessions": 2
+    },
+    {
+      "id": "C1_S3",
+      "name": "Data Structures",
+      "semester": 3,
+      "teacher": "T06",
+      "sessions": 2
+    },
+    {
+      "id": "C2_S3",
+      "name": "Database Systems",
+      "semester": 3,
+      "teacher": "T07",
+      "sessions": 2
+    },
+    {
+      "id": "C3_S3",
+      "name": "Object-Oriented Programming",
+      "semester": 3,
+      "teacher": "T08",
+      "sessions": 2
+    },
+    {
+      "id": "C4_S3",
+      "name": "Probability and Statistics",
+      "semester": 3,
+      "teacher": "T09",
+      "sessions": 2
+    },
+    {
+      "id": "C5_S3",
+      "name": "Computer Networks",
+      "semester": 3,
+      "teacher": "T10",
+      "sessions": 2
+    },
+    {
+      "id": "C1_S5",
+      "name": "Operating Systems",
+      "semester": 5,
+      "teacher": "T11",
+      "sessions": 2
+    },
+    {
+      "id": "C2_S5",
+      "name": "Software Engineering",
+      "semester": 5,
+      "teacher": "T12",
+      "sessions": 2
+    },
+    {
+      "id": "C3_S5",
+      "name": "Artificial Intelligence",
+      "semester": 5,
+      "teacher": "T13",
+      "sessions": 2
+    },
+    {
+      "id": "C4_S5",
+      "name": "Web Development",
+      "semester": 5,
+      "teacher": "T14",
+      "sessions": 2
+    },
+    {
+      "id": "C5_S5",
+      "name": "Algorithm Design",
+      "semester": 5,
+      "teacher": "T15",
+      "sessions": 2
+    },
+    {
+      "id": "C1_S7",
+      "name": "Machine Learning",
+      "semester": 7,
+      "teacher": "T16",
+      "sessions": 2
+    },
+    {
+      "id": "C2_S7",
+      "name": "Distributed Systems",
+      "semester": 7,
+      "teacher": "T17",
+      "sessions": 2
+    },
+    {
+      "id": "C3_S7",
+      "name": "Cybersecurity",
+      "semester": 7,
+      "teacher": "T18",
+      "sessions": 2
+    },
+    {
+      "id": "C4_S7",
+      "name": "Cloud Computing",
+      "semester": 7,
+      "teacher": "T19",
+      "sessions": 2
+    },
+    {
+      "id": "C5_S7",
+      "name": "Research Methods",
+      "semester": 7,
+      "teacher": "T20",
+      "sessions": 2
+    },
+    {
+      "id": "C1_S9",
+      "name": "Advanced AI",
+      "semester": 9,
+      "teacher": "T21",
+      "sessions": 2
+    },
+    {
+      "id": "C2_S9",
+      "name": "Big Data Engineering",
+      "semester": 9,
+      "teacher": "T22",
+      "sessions": 2
+    },
+    {
+      "id": "C3_S9",
+      "name": "DevOps",
+      "semester": 9,
+      "teacher": "T23",
+      "sessions": 2
+    },
+    {
+      "id": "C4_S9",
+      "name": "Project Management",
+      "semester": 9,
+      "teacher": "T24",
+      "sessions": 2
+    },
+    {
+      "id": "C5_S9",
+      "name": "Capstone Project",
+      "semester": 9,
+      "teacher": "T25",
+      "sessions": 2
+    }
+  ]
+}
