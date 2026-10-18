@@ -1,73 +1,69 @@
-# ai-timetable-optimizer
+# AI timetable optimizer
 
-# Department timetable — Hill Climbing with Random Walk and Random Restart
+## Shared problem definition
 
-## Model
+The datasets describe five semesters (S1, S3, S5, S7, S9), with four independent groups per semester. Each course has one teacher, and its `sessions` value is the number of weekly lessons **per group**. Each lesson occupies one two-hour timeslot.
 
-- S1, S3, S5, S7, S9: the first semesters of five university years.
-- Four independent groups per semester: `S1_G1` through `S9_G4`.
-- Each course has one assigned teacher across **all four groups**.
-- `sessions` in the JSON means the number of weekly sessions of this course **for each group**.
-- All sessions occupy one 2-hour time block; `MON_08` = 08:00–10:00, etc.
+A valid timetable must satisfy these hard constraints:
 
-## Hard constraints
+1. A room can host at most one lesson per timeslot.
+2. A group can attend at most one lesson per timeslot.
+3. A teacher can teach at most one lesson per timeslot.
 
-1. Same `(room, timeslot)` is forbidden for multiple sessions.
-2. Same `(group, timeslot)` is forbidden for multiple sessions.
-3. Same `(teacher, timeslot)` is forbidden for multiple sessions, even across semesters.
+Different groups in the same semester may have lessons at the same time. There are no room capacity, equipment, or availability restrictions.
 
-**Different groups of the same semester may have different courses simultaneously.** With one teacher per course, two groups taking the *same* course simultaneously violate constraint #3. No conflict is counted solely because two sessions belong to the same semester.
+The Hill Climbing fitness is the total number of conflicting pairs across the three constraints. `same_course_conflicts` is reported for diagnosis but is not added separately: lessons of the same course already share a teacher.
 
-The numeric heuristic counts each conflicting pair once **per constraint category**. `same_course_conflicts` is reported for diagnostic purposes but is *not* added separately to the fitness: under the single-teacher-per-course assumption, it is already included in `teacher_conflicts`.
+## Data
 
-## Run
+The JSON files are in [`data/`](data/):
 
-Requires only Python 3 (standard library).
+- `data_12_rooms.json`
+- `data_15_rooms.json`
+- `data_20_rooms.json`
+
+The solver uses `data_20_rooms.json` by default. To switch datasets, update `DATA_FILE` in [`algo/hill-climbing.py`](algo/hill-climbing.py).
+
+## Hill Climbing
+
+The search combines greedy hill climbing, random walk, and random restarts:
+
+- With probability `p_greedy`, it evaluates a sample of neighboring schedules and takes the best non-worsening one.
+- Otherwise, it takes a random neighbor, even if its fitness is worse.
+- It restarts from a new random schedule up to `max_restarts` times and keeps the best result.
+
+The search parameters (`max_restarts`, `max_steps`, `p_greedy`, `sample_size`, and `seed`) are set in the call to `hill_climbing_search()` in [`algo/hill-climbing.py`](algo/hill-climbing.py). A fitness of `0` means all hard constraints are satisfied; the search does not guarantee that it will find one.
+
+Run from the repository root with Python 3:
 
 ```bash
-python generate_data_hard.py   # optional; data_hard.json is already included
-python hill_climbing_timetable.py
+python algo/hill-climbing.py
 ```
 
-In `hill_climbing_timetable.py`, configure the search with `max_restarts`, `max_steps`, `p_greedy`, `sample_size` and `seed`. The shipped defaults (`5` restarts × `300` iterations, `35` sampled greedy neighbors, `0.85` greedy probability) provide a manageable test run, not a guarantee of zero conflicts. A conflict-free schedule is possible with the 50-room data, but the method does not guarantee success for every seed or dataset.
+The project uses only the Python standard library. The script prints the search metrics and generated timetable to the console.
 
-The `schedule_example.csv` is a sample result for **50 rooms**, using the default configuration with seed `42`. See `schedule_metrics.json` for the associated scores. Its fitness is **0**, with no room, group or teacher conflicts.
+## DFS and backtracking
 
-## Data size
+The backtracking solver uses the same dataset and constraints described above. It can be run in three configurations to compare variable/value ordering:
 
-- 25 unique courses = 5 courses × 5 semesters.
-- 20 groups = 4 groups × 5 semesters.
-- 200 sessions = 25 courses × 4 groups × 2 sessions.
-- **50 rooms** (R101–R150), 20 weekly two-hour timeslots.
-- Optional benchmark datasets: `data_12_rooms.json` and `data_20_rooms.json`. The solver uses `data_hard.json` (50 rooms) by default.
+```bash
+# Plain DFS, fixed input order
+python algo/dfs_backtracking_timetable.py --no-mrv --no-degree --output dfs_plain.csv
 
-## Program components
+# DFS with MRV
+python algo/dfs_backtracking_timetable.py --no-degree --output dfs_mrv.csv
 
-- `generate_data_hard.py`: deterministic sample dataset generator.
-- `data_hard.json`: generated 50-room dataset.
-- `data_12_rooms.json` / `data_20_rooms.json`: alternative room-count datasets for comparisons.
-- `hill_climbing_timetable.py`: solver, fitness and CLI report.
-- `schedule_example.csv`: exported sample timetable.
-- `schedule_metrics.json`: metrics for that example.
-
-## Room-count experiment (single run, seed 42)
-
-| Rooms | Fitness (lower is better) | Room / group / teacher conflicts | Fitness evaluations | Runtime (s) |
-| ---: | ---: | --- | ---: | ---: |
-| 12 | 4 | 4 / 0 / 0 | 45,433 | 8.58 |
-| 20 | 0 | 0 / 0 / 0 | 23,225 | 4.23 |
-| 50 | 0 | 0 / 0 / 0 | 3,550 | 0.66 |
-
-These are illustrative individual runs, **not average performance benchmarks**. Repeat across multiple seeds before drawing comparative conclusions. Runtime depends on hardware. With no room-specific restrictions, at most 20 sessions (one per group) can occur concurrently, so 20 rooms are theoretically sufficient from a room-capacity perspective; more rooms make random assignments easier, but can make the test less challenging.
-
-Note that there are **25 course subjects overall**: five subjects per semester, two sessions per group per subject, hence 10 weekly 2-hour lessons per group. There are **not 25 subjects per group**. Increasing to 25 subjects per group would require increasing timeslots or changing the load assumptions; the current 20 slots could not fit even one session of each subject per group.
-
-To test an alternative dataset without modifying the default dataset:
-
-```python
-from hill_climbing_timetable import load_dataset, hill_climbing_search, display_results
-sessions, rooms, slots = load_dataset('data_20_rooms.json')
-result = hill_climbing_search(sessions, rooms, slots)
-display_results(result, sessions)
+# DFS with MRV and the degree tie-breaker (default)
+python algo/dfs_backtracking_timetable.py --output dfs_mrv_degree.csv
 ```
 
+The solver applies:
+
+1. **MRV** to choose the unassigned session with the fewest available timeslots.
+2. **Degree** as a tie-breaker, preferring the session sharing a group or teacher with the most unassigned sessions.
+3. **Backtracking** to undo an assignment when it leads to a dead end.
+4. **Forward checking** to stop a branch if any unassigned session has no available timeslot.
+
+Because rooms are interchangeable in the current datasets, the solver only needs to try one free room for each timeslot. This optimization must be revisited if room capacities, equipment, or preferences are added.
+
+`FEASIBLE` means all sessions were assigned; `NO_SOLUTION` means the search was exhausted; `SEARCH_LIMIT` means the time or node budget was reached and does not prove that no solution exists. The DFS search statistics (`nodes_explored`, `backtracks`, and `domain_checks`) count different operations from Hill Climbing's `total_evaluations`, so compare runtime and validity rather than comparing those counts directly.

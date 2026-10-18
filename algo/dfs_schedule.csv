@@ -1,0 +1,201 @@
+session_id,course_id,course_name,semester,group,teacher,timeslot,room
+C5_S9_S9_G4_s1,C5_S9,Capstone Project,9,S9_G4,T25,FRI_08,R101
+C4_S9_S9_G1_s1,C4_S9,Project Management,9,S9_G1,T24,FRI_08,R102
+C5_S9_S9_G4_s2,C5_S9,Capstone Project,9,S9_G4,T25,FRI_10,R101
+C4_S9_S9_G1_s2,C4_S9,Project Management,9,S9_G1,T24,FRI_10,R102
+C3_S9_S9_G4_s1,C3_S9,DevOps,9,S9_G4,T23,FRI_13,R101
+C5_S9_S9_G2_s1,C5_S9,Capstone Project,9,S9_G2,T25,FRI_13,R102
+C4_S9_S9_G3_s1,C4_S9,Project Management,9,S9_G3,T24,FRI_13,R103
+C3_S9_S9_G4_s2,C3_S9,DevOps,9,S9_G4,T23,FRI_15,R101
+C5_S9_S9_G2_s2,C5_S9,Capstone Project,9,S9_G2,T25,FRI_15,R102
+C4_S9_S9_G3_s2,C4_S9,Project Management,9,S9_G3,T24,FRI_15,R103
+C1_S1_S1_G1_s1,C1_S1,Calculus I,1,S1_G1,T01,MON_08,R101
+C2_S1_S1_G3_s1,C2_S1,Programming Fundamentals,1,S1_G3,T02,MON_08,R102
+C3_S1_S1_G2_s1,C3_S1,Discrete Mathematics,1,S1_G2,T03,MON_08,R103
+C4_S1_S1_G4_s1,C4_S1,Computer Architecture,1,S1_G4,T04,MON_08,R104
+C1_S3_S3_G1_s1,C1_S3,Data Structures,3,S3_G1,T06,MON_08,R105
+C2_S3_S3_G3_s1,C2_S3,Database Systems,3,S3_G3,T07,MON_08,R106
+C3_S3_S3_G2_s1,C3_S3,Object-Oriented Programming,3,S3_G2,T08,MON_08,R107
+C4_S3_S3_G4_s1,C4_S3,Probability and Statistics,3,S3_G4,T09,MON_08,R108
+C1_S5_S5_G1_s1,C1_S5,Operating Systems,5,S5_G1,T11,MON_08,R109
+C2_S5_S5_G3_s1,C2_S5,Software Engineering,5,S5_G3,T12,MON_08,R110
+C3_S5_S5_G2_s1,C3_S5,Artificial Intelligence,5,S5_G2,T13,MON_08,R111
+C4_S5_S5_G4_s1,C4_S5,Web Development,5,S5_G4,T14,MON_08,R112
+C1_S7_S7_G1_s1,C1_S7,Machine Learning,7,S7_G1,T16,MON_08,R113
+C2_S7_S7_G3_s1,C2_S7,Distributed Systems,7,S7_G3,T17,MON_08,R114
+C4_S7_S7_G2_s1,C4_S7,Cloud Computing,7,S7_G2,T19,MON_08,R115
+C1_S1_S1_G1_s2,C1_S1,Calculus I,1,S1_G1,T01,MON_10,R101
+C2_S1_S1_G3_s2,C2_S1,Programming Fundamentals,1,S1_G3,T02,MON_10,R102
+C3_S1_S1_G2_s2,C3_S1,Discrete Mathematics,1,S1_G2,T03,MON_10,R103
+C4_S1_S1_G4_s2,C4_S1,Computer Architecture,1,S1_G4,T04,MON_10,R104
+C1_S3_S3_G1_s2,C1_S3,Data Structures,3,S3_G1,T06,MON_10,R105
+C2_S3_S3_G3_s2,C2_S3,Database Systems,3,S3_G3,T07,MON_10,R106
+C3_S3_S3_G2_s2,C3_S3,Object-Oriented Programming,3,S3_G2,T08,MON_10,R107
+C4_S3_S3_G4_s2,C4_S3,Probability and Statistics,3,S3_G4,T09,MON_10,R108
+C1_S5_S5_G1_s2,C1_S5,Operating Systems,5,S5_G1,T11,MON_10,R109
+C2_S5_S5_G3_s2,C2_S5,Software Engineering,5,S5_G3,T12,MON_10,R110
+C3_S5_S5_G2_s2,C3_S5,Artificial Intelligence,5,S5_G2,T13,MON_10,R111
+C4_S5_S5_G4_s2,C4_S5,Web Development,5,S5_G4,T14,MON_10,R112
+C1_S7_S7_G1_s2,C1_S7,Machine Learning,7,S7_G1,T16,MON_10,R113
+C2_S7_S7_G3_s2,C2_S7,Distributed Systems,7,S7_G3,T17,MON_10,R114
+C4_S7_S7_G2_s2,C4_S7,Cloud Computing,7,S7_G2,T19,MON_10,R115
+C1_S1_S1_G2_s1,C1_S1,Calculus I,1,S1_G2,T01,MON_13,R101
+C2_S1_S1_G1_s1,C2_S1,Programming Fundamentals,1,S1_G1,T02,MON_13,R102
+C4_S1_S1_G3_s1,C4_S1,Computer Architecture,1,S1_G3,T04,MON_13,R103
+C3_S1_S1_G4_s1,C3_S1,Discrete Mathematics,1,S1_G4,T03,MON_13,R104
+C1_S3_S3_G2_s1,C1_S3,Data Structures,3,S3_G2,T06,MON_13,R105
+C2_S3_S3_G1_s1,C2_S3,Database Systems,3,S3_G1,T07,MON_13,R106
+C4_S3_S3_G3_s1,C4_S3,Probability and Statistics,3,S3_G3,T09,MON_13,R107
+C3_S3_S3_G4_s1,C3_S3,Object-Oriented Programming,3,S3_G4,T08,MON_13,R108
+C1_S5_S5_G2_s1,C1_S5,Operating Systems,5,S5_G2,T11,MON_13,R109
+C2_S5_S5_G1_s1,C2_S5,Software Engineering,5,S5_G1,T12,MON_13,R110
+C4_S5_S5_G3_s1,C4_S5,Web Development,5,S5_G3,T14,MON_13,R111
+C3_S5_S5_G4_s1,C3_S5,Artificial Intelligence,5,S5_G4,T13,MON_13,R112
+C1_S7_S7_G2_s1,C1_S7,Machine Learning,7,S7_G2,T16,MON_13,R113
+C2_S7_S7_G1_s1,C2_S7,Distributed Systems,7,S7_G1,T17,MON_13,R114
+C3_S7_S7_G4_s1,C3_S7,Cybersecurity,7,S7_G4,T18,MON_13,R115
+C1_S1_S1_G2_s2,C1_S1,Calculus I,1,S1_G2,T01,MON_15,R101
+C2_S1_S1_G1_s2,C2_S1,Programming Fundamentals,1,S1_G1,T02,MON_15,R102
+C4_S1_S1_G3_s2,C4_S1,Computer Architecture,1,S1_G3,T04,MON_15,R103
+C3_S1_S1_G4_s2,C3_S1,Discrete Mathematics,1,S1_G4,T03,MON_15,R104
+C1_S3_S3_G2_s2,C1_S3,Data Structures,3,S3_G2,T06,MON_15,R105
+C2_S3_S3_G1_s2,C2_S3,Database Systems,3,S3_G1,T07,MON_15,R106
+C4_S3_S3_G3_s2,C4_S3,Probability and Statistics,3,S3_G3,T09,MON_15,R107
+C3_S3_S3_G4_s2,C3_S3,Object-Oriented Programming,3,S3_G4,T08,MON_15,R108
+C1_S5_S5_G2_s2,C1_S5,Operating Systems,5,S5_G2,T11,MON_15,R109
+C2_S5_S5_G1_s2,C2_S5,Software Engineering,5,S5_G1,T12,MON_15,R110
+C4_S5_S5_G3_s2,C4_S5,Web Development,5,S5_G3,T14,MON_15,R111
+C3_S5_S5_G4_s2,C3_S5,Artificial Intelligence,5,S5_G4,T13,MON_15,R112
+C1_S7_S7_G2_s2,C1_S7,Machine Learning,7,S7_G2,T16,MON_15,R113
+C2_S7_S7_G1_s2,C2_S7,Distributed Systems,7,S7_G1,T17,MON_15,R114
+C3_S7_S7_G4_s2,C3_S7,Cybersecurity,7,S7_G4,T18,MON_15,R115
+C5_S7_S7_G1_s1,C5_S7,Research Methods,7,S7_G1,T20,THU_08,R101
+C3_S7_S7_G3_s2,C3_S7,Cybersecurity,7,S7_G3,T18,THU_08,R102
+C4_S7_S7_G4_s1,C4_S7,Cloud Computing,7,S7_G4,T19,THU_08,R103
+C1_S9_S9_G3_s1,C1_S9,Advanced AI,9,S9_G3,T21,THU_08,R104
+C2_S9_S9_G4_s1,C2_S9,Big Data Engineering,9,S9_G4,T22,THU_08,R105
+C3_S9_S9_G1_s1,C3_S9,DevOps,9,S9_G1,T23,THU_08,R106
+C4_S9_S9_G2_s1,C4_S9,Project Management,9,S9_G2,T24,THU_08,R107
+C5_S7_S7_G1_s2,C5_S7,Research Methods,7,S7_G1,T20,THU_10,R101
+C4_S7_S7_G4_s2,C4_S7,Cloud Computing,7,S7_G4,T19,THU_10,R102
+C1_S9_S9_G3_s2,C1_S9,Advanced AI,9,S9_G3,T21,THU_10,R103
+C2_S9_S9_G4_s2,C2_S9,Big Data Engineering,9,S9_G4,T22,THU_10,R104
+C3_S9_S9_G1_s2,C3_S9,DevOps,9,S9_G1,T23,THU_10,R105
+C4_S9_S9_G2_s2,C4_S9,Project Management,9,S9_G2,T24,THU_10,R106
+C1_S9_S9_G4_s1,C1_S9,Advanced AI,9,S9_G4,T21,THU_13,R101
+C2_S9_S9_G2_s1,C2_S9,Big Data Engineering,9,S9_G2,T22,THU_13,R102
+C5_S9_S9_G1_s1,C5_S9,Capstone Project,9,S9_G1,T25,THU_13,R103
+C3_S9_S9_G3_s1,C3_S9,DevOps,9,S9_G3,T23,THU_13,R104
+C1_S9_S9_G4_s2,C1_S9,Advanced AI,9,S9_G4,T21,THU_15,R101
+C2_S9_S9_G2_s2,C2_S9,Big Data Engineering,9,S9_G2,T22,THU_15,R102
+C5_S9_S9_G1_s2,C5_S9,Capstone Project,9,S9_G1,T25,THU_15,R103
+C3_S9_S9_G3_s2,C3_S9,DevOps,9,S9_G3,T23,THU_15,R104
+C1_S1_S1_G3_s1,C1_S1,Calculus I,1,S1_G3,T01,TUE_08,R101
+C2_S1_S1_G4_s1,C2_S1,Programming Fundamentals,1,S1_G4,T02,TUE_08,R102
+C3_S1_S1_G1_s1,C3_S1,Discrete Mathematics,1,S1_G1,T03,TUE_08,R103
+C5_S1_S1_G2_s1,C5_S1,Technical Communication,1,S1_G2,T05,TUE_08,R104
+C1_S3_S3_G3_s1,C1_S3,Data Structures,3,S3_G3,T06,TUE_08,R105
+C2_S3_S3_G4_s1,C2_S3,Database Systems,3,S3_G4,T07,TUE_08,R106
+C3_S3_S3_G1_s1,C3_S3,Object-Oriented Programming,3,S3_G1,T08,TUE_08,R107
+C5_S3_S3_G2_s1,C5_S3,Computer Networks,3,S3_G2,T10,TUE_08,R108
+C1_S5_S5_G3_s1,C1_S5,Operating Systems,5,S5_G3,T11,TUE_08,R109
+C2_S5_S5_G4_s1,C2_S5,Software Engineering,5,S5_G4,T12,TUE_08,R110
+C3_S5_S5_G1_s1,C3_S5,Artificial Intelligence,5,S5_G1,T13,TUE_08,R111
+C5_S5_S5_G2_s1,C5_S5,Algorithm Design,5,S5_G2,T15,TUE_08,R112
+C1_S7_S7_G3_s1,C1_S7,Machine Learning,7,S7_G3,T16,TUE_08,R113
+C2_S7_S7_G4_s1,C2_S7,Distributed Systems,7,S7_G4,T17,TUE_08,R114
+C3_S7_S7_G1_s1,C3_S7,Cybersecurity,7,S7_G1,T18,TUE_08,R115
+C1_S1_S1_G3_s2,C1_S1,Calculus I,1,S1_G3,T01,TUE_10,R101
+C2_S1_S1_G4_s2,C2_S1,Programming Fundamentals,1,S1_G4,T02,TUE_10,R102
+C3_S1_S1_G1_s2,C3_S1,Discrete Mathematics,1,S1_G1,T03,TUE_10,R103
+C5_S1_S1_G2_s2,C5_S1,Technical Communication,1,S1_G2,T05,TUE_10,R104
+C1_S3_S3_G3_s2,C1_S3,Data Structures,3,S3_G3,T06,TUE_10,R105
+C2_S3_S3_G4_s2,C2_S3,Database Systems,3,S3_G4,T07,TUE_10,R106
+C3_S3_S3_G1_s2,C3_S3,Object-Oriented Programming,3,S3_G1,T08,TUE_10,R107
+C5_S3_S3_G2_s2,C5_S3,Computer Networks,3,S3_G2,T10,TUE_10,R108
+C1_S5_S5_G3_s2,C1_S5,Operating Systems,5,S5_G3,T11,TUE_10,R109
+C2_S5_S5_G4_s2,C2_S5,Software Engineering,5,S5_G4,T12,TUE_10,R110
+C3_S5_S5_G1_s2,C3_S5,Artificial Intelligence,5,S5_G1,T13,TUE_10,R111
+C5_S5_S5_G2_s2,C5_S5,Algorithm Design,5,S5_G2,T15,TUE_10,R112
+C1_S7_S7_G3_s2,C1_S7,Machine Learning,7,S7_G3,T16,TUE_10,R113
+C2_S7_S7_G4_s2,C2_S7,Distributed Systems,7,S7_G4,T17,TUE_10,R114
+C5_S7_S7_G2_s1,C5_S7,Research Methods,7,S7_G2,T20,TUE_10,R115
+C1_S1_S1_G4_s1,C1_S1,Calculus I,1,S1_G4,T01,TUE_13,R101
+C2_S1_S1_G2_s1,C2_S1,Programming Fundamentals,1,S1_G2,T02,TUE_13,R102
+C4_S1_S1_G1_s1,C4_S1,Computer Architecture,1,S1_G1,T04,TUE_13,R103
+C5_S1_S1_G3_s1,C5_S1,Technical Communication,1,S1_G3,T05,TUE_13,R104
+C1_S3_S3_G4_s1,C1_S3,Data Structures,3,S3_G4,T06,TUE_13,R105
+C2_S3_S3_G2_s1,C2_S3,Database Systems,3,S3_G2,T07,TUE_13,R106
+C4_S3_S3_G1_s1,C4_S3,Probability and Statistics,3,S3_G1,T09,TUE_13,R107
+C5_S3_S3_G3_s1,C5_S3,Computer Networks,3,S3_G3,T10,TUE_13,R108
+C1_S5_S5_G4_s1,C1_S5,Operating Systems,5,S5_G4,T11,TUE_13,R109
+C2_S5_S5_G2_s1,C2_S5,Software Engineering,5,S5_G2,T12,TUE_13,R110
+C4_S5_S5_G1_s1,C4_S5,Web Development,5,S5_G1,T14,TUE_13,R111
+C5_S5_S5_G3_s1,C5_S5,Algorithm Design,5,S5_G3,T15,TUE_13,R112
+C1_S7_S7_G4_s1,C1_S7,Machine Learning,7,S7_G4,T16,TUE_13,R113
+C2_S7_S7_G2_s1,C2_S7,Distributed Systems,7,S7_G2,T17,TUE_13,R114
+C3_S7_S7_G1_s2,C3_S7,Cybersecurity,7,S7_G1,T18,TUE_13,R115
+C1_S1_S1_G4_s2,C1_S1,Calculus I,1,S1_G4,T01,TUE_15,R101
+C2_S1_S1_G2_s2,C2_S1,Programming Fundamentals,1,S1_G2,T02,TUE_15,R102
+C4_S1_S1_G1_s2,C4_S1,Computer Architecture,1,S1_G1,T04,TUE_15,R103
+C5_S1_S1_G3_s2,C5_S1,Technical Communication,1,S1_G3,T05,TUE_15,R104
+C1_S3_S3_G4_s2,C1_S3,Data Structures,3,S3_G4,T06,TUE_15,R105
+C2_S3_S3_G2_s2,C2_S3,Database Systems,3,S3_G2,T07,TUE_15,R106
+C4_S3_S3_G1_s2,C4_S3,Probability and Statistics,3,S3_G1,T09,TUE_15,R107
+C5_S3_S3_G3_s2,C5_S3,Computer Networks,3,S3_G3,T10,TUE_15,R108
+C1_S5_S5_G4_s2,C1_S5,Operating Systems,5,S5_G4,T11,TUE_15,R109
+C2_S5_S5_G2_s2,C2_S5,Software Engineering,5,S5_G2,T12,TUE_15,R110
+C4_S5_S5_G1_s2,C4_S5,Web Development,5,S5_G1,T14,TUE_15,R111
+C5_S5_S5_G3_s2,C5_S5,Algorithm Design,5,S5_G3,T15,TUE_15,R112
+C1_S7_S7_G4_s2,C1_S7,Machine Learning,7,S7_G4,T16,TUE_15,R113
+C2_S7_S7_G2_s2,C2_S7,Distributed Systems,7,S7_G2,T17,TUE_15,R114
+C5_S7_S7_G3_s1,C5_S7,Research Methods,7,S7_G3,T20,TUE_15,R115
+C5_S1_S1_G1_s1,C5_S1,Technical Communication,1,S1_G1,T05,WED_08,R101
+C4_S1_S1_G2_s1,C4_S1,Computer Architecture,1,S1_G2,T04,WED_08,R102
+C3_S1_S1_G3_s1,C3_S1,Discrete Mathematics,1,S1_G3,T03,WED_08,R103
+C5_S3_S3_G1_s1,C5_S3,Computer Networks,3,S3_G1,T10,WED_08,R104
+C4_S3_S3_G2_s1,C4_S3,Probability and Statistics,3,S3_G2,T09,WED_08,R105
+C3_S3_S3_G3_s1,C3_S3,Object-Oriented Programming,3,S3_G3,T08,WED_08,R106
+C5_S5_S5_G1_s1,C5_S5,Algorithm Design,5,S5_G1,T15,WED_08,R107
+C4_S5_S5_G2_s1,C4_S5,Web Development,5,S5_G2,T14,WED_08,R108
+C3_S5_S5_G3_s1,C3_S5,Artificial Intelligence,5,S5_G3,T13,WED_08,R109
+C5_S7_S7_G2_s2,C5_S7,Research Methods,7,S7_G2,T20,WED_08,R110
+C3_S7_S7_G3_s1,C3_S7,Cybersecurity,7,S7_G3,T18,WED_08,R111
+C4_S7_S7_G1_s1,C4_S7,Cloud Computing,7,S7_G1,T19,WED_08,R112
+C1_S9_S9_G1_s1,C1_S9,Advanced AI,9,S9_G1,T21,WED_08,R113
+C2_S9_S9_G3_s1,C2_S9,Big Data Engineering,9,S9_G3,T22,WED_08,R114
+C3_S9_S9_G2_s1,C3_S9,DevOps,9,S9_G2,T23,WED_08,R115
+C5_S1_S1_G1_s2,C5_S1,Technical Communication,1,S1_G1,T05,WED_10,R101
+C4_S1_S1_G2_s2,C4_S1,Computer Architecture,1,S1_G2,T04,WED_10,R102
+C3_S1_S1_G3_s2,C3_S1,Discrete Mathematics,1,S1_G3,T03,WED_10,R103
+C5_S3_S3_G1_s2,C5_S3,Computer Networks,3,S3_G1,T10,WED_10,R104
+C4_S3_S3_G2_s2,C4_S3,Probability and Statistics,3,S3_G2,T09,WED_10,R105
+C3_S3_S3_G3_s2,C3_S3,Object-Oriented Programming,3,S3_G3,T08,WED_10,R106
+C5_S5_S5_G1_s2,C5_S5,Algorithm Design,5,S5_G1,T15,WED_10,R107
+C4_S5_S5_G2_s2,C4_S5,Web Development,5,S5_G2,T14,WED_10,R108
+C3_S5_S5_G3_s2,C3_S5,Artificial Intelligence,5,S5_G3,T13,WED_10,R109
+C3_S7_S7_G2_s1,C3_S7,Cybersecurity,7,S7_G2,T18,WED_10,R110
+C5_S7_S7_G4_s1,C5_S7,Research Methods,7,S7_G4,T20,WED_10,R111
+C4_S7_S7_G3_s1,C4_S7,Cloud Computing,7,S7_G3,T19,WED_10,R112
+C1_S9_S9_G1_s2,C1_S9,Advanced AI,9,S9_G1,T21,WED_10,R113
+C2_S9_S9_G3_s2,C2_S9,Big Data Engineering,9,S9_G3,T22,WED_10,R114
+C3_S9_S9_G2_s2,C3_S9,DevOps,9,S9_G2,T23,WED_10,R115
+C5_S1_S1_G4_s1,C5_S1,Technical Communication,1,S1_G4,T05,WED_13,R101
+C5_S3_S3_G4_s1,C5_S3,Computer Networks,3,S3_G4,T10,WED_13,R102
+C5_S5_S5_G4_s1,C5_S5,Algorithm Design,5,S5_G4,T15,WED_13,R103
+C3_S7_S7_G2_s2,C3_S7,Cybersecurity,7,S7_G2,T18,WED_13,R104
+C5_S7_S7_G4_s2,C5_S7,Research Methods,7,S7_G4,T20,WED_13,R105
+C4_S7_S7_G3_s2,C4_S7,Cloud Computing,7,S7_G3,T19,WED_13,R106
+C1_S9_S9_G2_s1,C1_S9,Advanced AI,9,S9_G2,T21,WED_13,R107
+C2_S9_S9_G1_s1,C2_S9,Big Data Engineering,9,S9_G1,T22,WED_13,R108
+C4_S9_S9_G4_s1,C4_S9,Project Management,9,S9_G4,T24,WED_13,R109
+C5_S9_S9_G3_s1,C5_S9,Capstone Project,9,S9_G3,T25,WED_13,R110
+C5_S1_S1_G4_s2,C5_S1,Technical Communication,1,S1_G4,T05,WED_15,R101
+C5_S3_S3_G4_s2,C5_S3,Computer Networks,3,S3_G4,T10,WED_15,R102
+C5_S5_S5_G4_s2,C5_S5,Algorithm Design,5,S5_G4,T15,WED_15,R103
+C5_S7_S7_G3_s2,C5_S7,Research Methods,7,S7_G3,T20,WED_15,R104
+C4_S7_S7_G1_s2,C4_S7,Cloud Computing,7,S7_G1,T19,WED_15,R105
+C1_S9_S9_G2_s2,C1_S9,Advanced AI,9,S9_G2,T21,WED_15,R106
+C2_S9_S9_G1_s2,C2_S9,Big Data Engineering,9,S9_G1,T22,WED_15,R107
+C4_S9_S9_G4_s2,C4_S9,Project Management,9,S9_G4,T24,WED_15,R108
+C5_S9_S9_G3_s2,C5_S9,Capstone Project,9,S9_G3,T25,WED_15,R109

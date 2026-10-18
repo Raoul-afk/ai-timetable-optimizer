@@ -18,7 +18,7 @@ import time
 from collections import Counter
 from pathlib import Path
 
-DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "data_20_rooms.json"
+DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "data_15_rooms.json"
 
 
 def load_dataset(filepath=DATA_FILE):
