@@ -81,7 +81,7 @@ def fitness(schedule, sessions_meta):
     c = cost(schedule, sessions_meta)
     return 1.0 / (1.0 + c)
 
-def run_genetic_algorithm_dataset(json_path="data_20_rooms.json", pop_size=100, generations=1000, elite_size=2, mutation_rate=0.1, gene_mutation_prob=0.1):
+def run_genetic_algorithm_dataset(json_path="data_20_rooms.json", pop_size=10, generations=1000, elite_size=2, mutation_rate=0.25, gene_mutation_prob=0.1):
     sessions_meta, rooms, timeslots = load_dataset(json_path)
     
     # (a) Population initiale : chaque individu est une liste de tuples (room, timeslot) pour chaque session
