@@ -1,17 +1,3 @@
-"""Timetable generator: stochastic hill climbing + random walk + random restarts.
-
-Each lesson is a 2-hour block. The `sessions` field in data_hard.json
-represents the number of lessons of a subject PER GROUP each week.
-
-Hard constraints:
- - no room hosts multiple sessions in one slot;
- - no group attends two sessions in one slot;
- - no teacher teaches two sessions in one slot.
-
-There is deliberately NO conflict on the semester alone: distinct groups
-in S5 can attend different subjects simultaneously.
-"""
-
 import json
 import random
 import time
@@ -61,7 +47,7 @@ def compute_heuristic(state, session_lookup):
     by_room = Counter()
     by_group = Counter()
     by_teacher = Counter()
-    by_course = Counter()  # For reporting, NOT added twice to fitness.
+    by_course = Counter()  # For reporting, NOT added twice to fitness
 
     for session_id, assignment in state.items():
         room, slot = assignment["room"], assignment["timeslot"]
@@ -85,11 +71,11 @@ def compute_heuristic(state, session_lookup):
 
 
 def get_random_neighbor(state, sessions, rooms, timeslots):
-    # Shallow copy is safe because each replacement assignment dict is also copied.
+    # Shallow copy is safe because each replacement assignment dict is also copied
     neighbor = state.copy()
     chosen_id = random.choice(sessions)["id"]
     old = state[chosen_id]
-    # Try not to return exactly the same assignment as before.
+    # Try not to return exactly the same assignment as before
     new_room = random.choice(rooms)
     new_slot = random.choice(timeslots)
     if len(rooms) * len(timeslots) > 1:
@@ -148,11 +134,11 @@ def hill_climbing_search(
                     current_state, sessions, rooms, timeslots,
                     session_lookup, sample_size=sample_size
                 )
-                total_evals += sample_size  # Count every candidate evaluated.
+                total_evals += sample_size  # Count every candidate evaluated
                 if next_h <= current_h:
                     current_state, current_h = next_state, next_h
             else:
-                # Random Walk: even a worse neighbor is accepted.
+                # Random walk, even a worse neighbor is accepted
                 next_state = get_random_neighbor(current_state, sessions, rooms, timeslots)
                 next_h, _ = compute_heuristic(next_state, session_lookup)
                 total_evals += 1
